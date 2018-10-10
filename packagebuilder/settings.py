@@ -25,7 +25,7 @@ TEMPLATE_DEBUG = DEBUG
 THUMBNAIL_DEBUG = DEBUG
 
 ADMINS = (
-    ('Ben Edwards', 'ben@edwards.nz'),
+    ('Ben Edwards', 'ben@edwards.nz'), ('Binu Moothedan', 'binu.moothedan@extentia.com')
 )
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -108,7 +108,7 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 SALESFORCE_CONSUMER_KEY = os.environ['SALESFORCE_CONSUMER_KEY']
 SALESFORCE_CONSUMER_SECRET = os.environ['SALESFORCE_CONSUMER_SECRET']
-SALESFORCE_REDIRECT_URI = 'https://packagebuilder.herokuapp.com/oauth_response'
+SALESFORCE_REDIRECT_URI = 'https://packagebuilderext.herokuapp.com/oauth_response'
 SALESFORCE_API_VERSION = int(os.environ['SALESFORCE_API_VERSION'])
 
 SALESFORCE_REST_URL = '/services/data/v%d.0/' % SALESFORCE_API_VERSION
